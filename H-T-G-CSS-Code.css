@@ -1,0 +1,485 @@
+/* Base Styles */
+/* Overall styling for the body element */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #fefeff;
+}
+
+/* Header Styling */
+/* Styles for the header section */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    border-bottom: 1px solid #cccccc;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 24px;
+    color: #333333;
+}
+
+.header h1 span {
+    color: #ff9900;
+}
+
+/* Container Styling */
+/* Styles for the main content container */
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 10px;
+    background-color: #fff;
+    text-align: left;
+}
+
+/* Input Box Styling */
+/* Styles for the input box elements */
+.input-box {
+    margin: 20px auto;
+    width: 100%;
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.input-box input,
+.input-box select,
+.input-box button {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 30px;
+    margin-bottom: 10px;
+    box-sizing: border-box; /* Ensure padding and border are included in the width */
+}
+
+.input-box input,
+.input-box select {
+    border: 2px solid #ff9900;
+}
+
+.input-box button {
+    color: white;
+    background-color: #ff9900;
+    border: none;
+    cursor: pointer;
+}
+
+.input-box button:hover {
+    background-color: #e68a00;
+}
+
+/* Hashtags Container Styling */
+/* Styles for the hashtags container */
+.hashtags-container-wrapper {
+    display: none;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.hashtags-container {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.hashtags-container h2 {
+    margin-bottom: 10px;
+    font-size: 1.2em;
+}
+
+.hashtags-container h2 .random {
+    color: red;
+}
+
+.hashtags-container h2 .count {
+    font-size: 0.8em;
+    color: #999;
+}
+
+/* Individual Hashtag Styling */
+/* Styles for individual hashtags */
+.hashtag {
+    display: inline-block;
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+    padding: 3px 6px;
+    font-size: 12px;
+    margin: 5px;
+    position: relative;
+}
+
+.hashtag .count {
+    margin-left: 5px;
+    color: #999;
+}
+
+.hashtag .remove-icon {
+    margin-left: 5px;
+    color: red;
+    cursor: pointer;
+}
+
+/* Copy Button Styling */
+/* Styles for the copy button */
+.copy-button {
+    text-align: right;
+    margin-bottom: 10px;
+}
+
+.copy-button button {
+    padding: 5px 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.copy-button button:hover {
+    background-color: #45a049;
+}
+
+/* Typography */
+/* General typography styles */
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+ol {
+    margin-bottom: 20px;
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+/* Content Box Styling */
+/* Styles for content boxes */
+.content {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Divider Styling */
+/* Styles for dividers */
+.divider {
+    width: 100%;
+    height: 1px;
+    background-color: #cccccc;
+    margin: 20px 0;
+}
+
+/* Footer Styling */
+/* Styles for the footer section */
+.footer {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 14px;
+    color: #666666;
+}
+
+.footer a {
+    color: #ff9900;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+.footer p {
+    font-size: 10px;
+}
+
+/* Cookie Box Styling */
+/* Styles for the cookie consent box */
+#cookieBox {
+    position: fixed;
+    bottom: -300px;
+    left: 0px;
+    right: 0px;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    transition: bottom 0.5s ease-in-out;
+}
+
+#cookieBox.show {
+    bottom: 0px;
+}
+
+#cookieBox p {
+    margin: 0 0 10px 0;
+    width: 100%;
+    font-size: 14px;
+}
+
+#cookieBox a {
+    color: blue;
+    text-decoration: underline;
+}
+
+#cookieBox h2 {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* Button Styling */
+/* General styles for buttons */
+.button {
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.accept-btn {
+    background-color: orange;
+    color: white;
+}
+
+.reject-btn {
+    background-color: black;
+    color: white;
+}
+
+/* Loading Circle Styling */
+/* Styles for loading animation */
+.loading-circle {
+    display: none;
+    width: 50px;
+    height: 50px;
+    border: 5px solid #f3f3f3;
+    border-top: 5px solid #3498db;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin: 20px auto;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Dark Mode Styling */
+/* Styles for dark mode */
+.mode-selector {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.mode-selector select {
+    background-color: #eeeeee;
+    color: #333333;
+    border: none;
+    padding: 4px;
+    font-size: 14px;
+    outline: none;
+    border: 1px solid #ccc;
+}
+
+.dark-mode {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+.dark-mode .header {
+    border-bottom: 1px solid #333333;
+}
+
+.dark-mode .header h1 {
+    color: #ffffff;
+}
+
+.dark-mode .container {
+    background-color: #1e1e1e;
+}
+
+.dark-mode .input-box input {
+    border: 2px solid #ff9900;
+    background-color: #333333;
+    color: #ffffff;
+}
+
+.dark-mode .input-box button {
+    background-color: #ff9900;
+    color: #ffffff;
+}
+
+.dark-mode .loading-circle {
+    border: 8px solid #333333;
+    border-top: 8px solid #ff9900;
+}
+
+.dark-mode .hashtags-container {
+    background-color: #2b2b2b;
+    color: #ffffff;
+    border: 1px solid #444444;
+}
+
+.dark-mode .hashtag {
+    background-color: #3a3a3a;
+    color: #ffffff;
+}
+
+.dark-mode .hashtag .count {
+    color: #aaaaaa;
+}
+
+.dark-mode .hashtag .remove-icon {
+    color: #cccccc;
+}
+
+.dark-mode .copy-button button {
+    background-color: #444444;
+    color: #ffffff;
+}
+
+.dark-mode .copy-button button:hover {
+    background-color: #555555;
+}
+
+.dark-mode .content {
+    background-color: #1E1E1E;
+    color: #fff;
+    border: 0px;
+}
+
+.dark-mode #cookieBox {
+    background-color: #333333;
+    color: #fff;
+}
+
+.dark-mode .divider {
+    background-color: #333333;
+}
+
+.dark-mode .mode-selector select {
+    background-color: #333333;
+    color: #ffffff;
+    border: 1px solid #ccc;
+}
+
+.dark-mode .footer {
+    color: #aaaaaa;
+}
+
+.dark-mode .footer a {
+    color: #ff9900;
+}
+
+.dark-mode .footer p {
+    color: #777777;
+}
+
+/* Toast Notification Styling */
+/* Styles for toast notifications */
+.toast {
+    visibility: hidden;
+    min-width: 250px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    padding: 16px;
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    bottom: 30px;
+    transform: translateX(-50%);
+    font-size: 17px;
+}
+
+.toast.show {
+    visibility: visible;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+@keyframes fadein {
+    from {bottom: 0; opacity: 0;} 
+    to {bottom: 30px; opacity: 1;}
+}
+
+@keyframes fadeout {
+    from {bottom: 30px; opacity: 1;} 
+    to {bottom: 0; opacity: 0;}
+}
+
+/* Go to Top Button Styling */
+/* Styles for the 'Go to Top' button */
+#goToTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: #ff9900;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 18px;
+    text-align: center;
+    line-height: 30px;
+}
+
+#goToTopBtn:hover {
+    background-color: #e68a00;
+}
+
+/* Dropdown Button Styling */
+/* Styles for styled dropdowns */
+.styled-dropdown {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 30px;
+    margin-bottom: 10px;
+    border: 2px solid #ff9900;
+    background-color: white;
+    color: black;
+    outline: none;
+}
+
+.dark-mode .styled-dropdown {
+    background-color: #333333;
+    color: #ffffff;
+    border: 2px solid #ff9900;
+}
+
+/* Error Styling */
+/* Styles for error states */
+.error {
+    border-color: red !important;
+}
